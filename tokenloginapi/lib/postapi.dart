@@ -22,8 +22,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
             "email": email,
             "password": password,
           });
-      print(response.statusCode);
-      print(response.body);
+      print("Status Code :${response.statusCode}");
+      // print(response.body);
       if (response.statusCode == 200) {
         print("account Login Successfully");
       } else {
