@@ -64,6 +64,15 @@ class _SignUpScreenState extends State<SignUpScreen> {
               onTap: () {
                 login(emailController.text.toString(),
                     passwordController.text.toString());
+                if (login == true) {
+                  Fluttertoast.showToast(
+                      msg: "This is Plugin Toast Message",
+                      toastLength: Toast.LENGTH_SHORT,
+                      gravity: ToastGravity.CENTER,
+                      backgroundColor: Colors.red,
+                      textColor: Colors.white,
+                      fontSize: 16.0);
+                }
               },
               child: Container(
                 height: 40,
